@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{}
+
+#page1
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: #F5F5F5;
+}
+/* 
+navbar has started from here */
+#page1 #nav{
+    height: 100px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+#one{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding-left: 100px;
+}
+#one a{
+    text-decoration: none;
+    font-size: 3.5vh;
+    color: #1b1b1bac;
+    font-weight: 500;
+    font-family: monospace;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.3s;
+}
+/* #one a:active::nth-child(1){
+    color: rgb(255, 0, 0);
+} */
+#one a:hover{
+    scale: 1.1;
+    text-decoration: underline;
+
+}
+#two{
+    height: 80px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left: -50%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955)1s;
+        
+}
+#two h1{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 2px;
+   
+   
+    
+}
+#two:hover{
+    background-color: rgba(227, 116, 20, 0.916);
+    scale: 1.1;
+    cursor: pointer;
+}
+#three{
+    position: absolute;
+    display: flex;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    gap: 10px;
+
+}
+#three a #linkedin{
+    height: 25px;
+    position: relative;
+    border-radius: 4px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+    
+}
+#three a #youtube{
+    height: 70px;
+    border-radius: 2px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+}
+#three a #linkedin:hover{
+   scale: 1.2;
+}
+#three a #youtube:hover{
+    scale: 1.2;
+ }
+ #pic {
+    position: absolute;
+    bottom: 10%;
+ }
+ #pic img{
+    height: 500px;
+    
+ }
