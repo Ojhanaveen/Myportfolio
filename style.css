@@ -1,12 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 html,body{
     height: 100%;
     width: 100%;
+    background-color: #F5F5F5;
+}
+body{
+    overflow-x: hidden;
 }
 #main{}
 
@@ -26,6 +34,7 @@ navbar has started from here */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999999999999999999;
     
 
 }
@@ -40,8 +49,9 @@ navbar has started from here */
     font-size: 3.5vh;
     color: #1b1b1bac;
     font-weight: 500;
-    font-family: monospace;
+    /* font-family: monospace; */
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.3s;
+    z-index: 9999999;
 }
 /* #one a:active::nth-child(1){
     color: rgb(255, 0, 0);
@@ -54,7 +64,7 @@ navbar has started from here */
 #two{
     height: 80px;
     width: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     position: relative;
     left: -50%;
@@ -108,11 +118,307 @@ navbar has started from here */
 #three a #youtube:hover{
     scale: 1.2;
  }
+ #three a #insta{
+    height: 30px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+
+ }
+ #three a #insta:hover{
+    scale: 1.2;
+ }
+ #three a #github{
+    height: 35px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)0.5s;
+ }
+ #three a #github:hover{
+    scale: 1.2;
+ }
  #pic {
     position: absolute;
-    bottom: 10%;
+    bottom: -5%;
+    left: -5%;
+    /* background-color: red; */
+    height: 700px;
+    width: 600px;
+    margin-left: 30px;
+   
  }
  #pic img{
-    height: 500px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode:darken;
     
  }
+ #about{
+    height: 30px;
+    display: flex;
+    right: 0;
+    bottom: 15%;
+    text-decoration: solid;
+    background-color: aqua;
+    padding-right: 50px;
+    align-items: center;
+    position:absolute;
+ }
+ #resume{
+    height: 20px;
+    width: 53px;
+    position: absolute;
+    bottom: 10%;
+    color: black;
+    right: 0;
+    background-color: black;
+ }
+
+ /* right div has been started from here */
+ #right{
+    position: absolute;
+    right:0;
+    top: 20%;
+    background-color: #F5F5F5;
+    height: 42vh;
+    width: 50%;
+    /* margin: 100px; */
+    /* box-shadow: 2px 2px 2px grey; */
+
+ }
+ #right h1{
+    font-size: 80px;
+    padding-top: 50px;
+    /* font-family: monospace; */
+    letter-spacing: 3px;
+    line-height: 1;
+    color:#833B46;
+ }
+ #right h1 span{
+    position: relative;
+    color:#C0AAB1;
+    font-size: 60px;
+    
+        
+ }
+#right p{
+    width:100%;
+    padding-top: 25px;
+    font-size: 20px;
+    /* font-family: monospace; */
+    color: black;
+    font-weight: 550;
+}
+
+#right >button{
+    margin-top: 30px;
+    padding: 15px 15px ;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.1s ease-in-out;
+
+}
+#right >button:hover{
+    background-color: white;
+    color:  black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#right a{
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+#page1 #circle1{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    position: fixed;
+    bottom: 20%;
+    z-index: 99999;
+    border-radius: 50%;
+    position: absolute;
+    left: -84%;
+    top: 140%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#page1 #circle1:hover{
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+#page1 #circle1:hover h3{
+    color: black;
+}
+#page1 #circle1 h3{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    z-index: 99999999;
+}
+
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+   
+    100%{
+        rotate: 360deg;
+    }
+}
+#cir{
+    /* background-color: red; */
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    bottom: 20%;
+    z-index: 99999;
+    border-radius: 50%;
+    position: absolute;
+    left: -92%;
+    top: 120%;
+    z-index: 0;
+    
+}
+
+#cir img{
+    height: 100%;
+    width: 100%;
+    /* margin-right: 50px; */
+    position: absolute;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    object-fit: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding-right: 5px; */
+    border: inset none;
+}
+#sms{
+    font-size: 80px;
+    /* padding-right: 220px; */
+    align-items: center;
+    /* padding-top: 50px; */
+    position:absolute;
+    animation-name: Updown;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    right: 5%;
+    top: 162%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes Updown{
+    0%{
+        transform: translateY(-10px);
+    }
+    
+    100%{
+        transform: translateY(10px);
+    }
+}  
+/* page2 has been started */
+#page2{
+    height:20vh;
+    width: 100vw;
+    /* background-color: red; */
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    
+}
+#page2 h3{
+    padding-right: 80px;
+    font-weight: 400;
+    padding-left: 80px;
+}
+#line{
+    width: 100vw;
+    border: 1px solid black;
+    position: absolute;
+    bottom: -15%;
+}
+#page2 h3 a{
+    text-decoration: none;
+    color: black;
+}
+#page2 h3 a:hover{
+    color:#833B46;
+}
+#page3{
+    position: absolute;
+    height: 100vh;
+    width:35vw;
+    left: -100%;
+    top: 35%;
+    background-color:#d86264;
+    z-index: 999999999;
+    background-image: url(./p1.png);
+    background-position:  center;
+    background-size: cover;
+    /* opacity: 0.5; */
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1)1s;
+   
+}
+#page3 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    position: relative;
+    top: 5%;
+}
+#page3 form input{
+   padding: 15px 80px;
+   outline: none;
+   border-radius: 10px;
+}
+#page3 form textarea{
+    padding: 5px 58px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#page3 form button{
+    padding: 10px 30px;
+    background-color: rgba(0, 145, 255, 0.635);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+form h1{
+    color:  beige;
+}
+#msg{
+    cursor: pointer;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1)1s;
+}
+#close {
+    position: absolute;
+    right: 5%;
+    bottom:-35%;
+    padding: 0px 5px;
+    background-color: red;
+    color:white;
+    opacity: 0;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1)1s;
+    cursor: pointer;
+}
